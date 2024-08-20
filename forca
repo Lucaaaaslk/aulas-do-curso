@@ -1,0 +1,27 @@
+import os
+
+print("Tente adivinhar a palavra")
+
+palavra = 'carro'
+tentativas = 0
+letras_acertadas = ''
+while True:
+    letra_digitada = input('Escolha uma letra: ')
+    tentativas += 1
+    if len(letra_digitada) > 1:
+        print("Muitas letras digitadas")
+        continue
+    if letra_digitada in palavra:
+        letras_acertadas += letra_digitada
+    palavra_formada = ''
+    for letra in palavra:
+        if letra in letras_acertadas:
+            palavra_formada += letra
+        else:
+            palavra_formada += '*'
+    print(f"A palavra é {palavra_formada}")
+    if palavra == palavra_formada:
+        print(f"Você acertou a palavra '{palavra}' em {tentativas} tentativas!")
+        break
+
+    os.system('cls' if os.name == 'nt' else 'clear')
