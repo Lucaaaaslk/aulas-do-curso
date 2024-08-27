@@ -1,0 +1,11 @@
+palavras = ["python", "oi", "código", "web", "programação"]
+
+    
+
+maior = max(palavras, key=len)
+
+print(maior)
+
+menor = min(palavras, key=len)
+
+print(menor)
