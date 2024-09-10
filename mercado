@@ -1,0 +1,12 @@
+preço = int(input('digite:'))
+desconto = int(input('digite:'))
+
+valor_desconto = preço * desconto/100
+
+print ( valor_desconto)
+
+print("o valor total que você tem a pagar é")
+
+valor_total = preço - valor_desconto
+
+print(valor_total)
