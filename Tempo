@@ -1,0 +1,4 @@
+distancia_percorrida = float(input('Digite a distância que irá ser percorrida durante o trajeto:'))
+velocidade = float(input('Digite a velocidade que irá ser usada durante o trajeto:'))
+tempo = velocidade/distancia_percorrida
+print(tempo)
