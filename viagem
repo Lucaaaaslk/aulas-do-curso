@@ -1,0 +1,11 @@
+quilometros = int(input('digite quilometros'))
+dias = int(input('digite os dias'))
+
+preço_pagar_carro = dias * 60
+preço_quilometro = quilometros * 0.15
+print (preço_pagar_carro)
+print(preço_quilometro)
+
+print ("preço total que você tem que pagar é")
+
+print(preço_pagar_carro + preço_quilometro)
