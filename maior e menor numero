@@ -1,0 +1,16 @@
+numero_1 = int(input('digite o primeiro numero'))
+numero_2 = int(input('digite o segundo numero'))
+numero_3 = int(input('digite o terceiro numero'))
+
+
+print("esses são seus numeros")
+
+print(numero_1, numero_2, numero_3)
+
+numero_menor  = min(numero_1, numero_2, numero_3)
+
+print (numero_menor)
+
+numero_maior = max(numero_1, numero_2, numero_3)
+
+print(numero_maior)
