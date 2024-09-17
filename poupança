@@ -1,0 +1,12 @@
+deposito_inicial = int(input('digite o seu deposito inicial'))
+taxa_de_juros = int(input('digite o seu juros')) 
+
+juros_totais = (deposito_inicial * taxa_de_juros)
+
+valor_mensal_juros = (juros_totais / 24)
+
+juros_final = juros_totais * 24
+print("seus juros mensais foram de")
+print(f'valor mensal dos juros: {valor_mensal_juros:.2f}')
+
+print(f'Juro total: {juros_final:.1f}')
