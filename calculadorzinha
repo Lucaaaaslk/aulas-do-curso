@@ -1,0 +1,31 @@
+print("escolha uma entre as opções, soma, divisão, multiplicação, e subtração ")
+print("a seguir digite uma das opções a seguir para continuar com a operação escolhida")
+escolha = input("digite a inicial da operação para continuar A/D/M/S")
+
+if escolha == "A":
+    numero_1 = float(input('digite o primeiro numero'))
+    numero_2 = float(input('digite o segundo numero'))
+    soma = numero_1 + numero_2
+    print(soma)
+
+
+if escolha == "D":
+    numero_1 = float(input('digite o primeiro numero'))
+    numero_2 = float(input('digite o segundo numero'))
+    divisão = numero_1 / numero_2
+    print(divisão)
+    
+if escolha == "M":
+    numero_1 = float(input('digite o primeiro numero'))
+    numero_2 = float(input('digite o segundo numero'))
+    multiplicação = numero_1 * numero_2
+    print(multiplicação)
+    
+if escolha == "S":
+    numero_1 = float(input('digite o primeiro numero'))
+    numero_2 = float(input('digite o segundo numero'))
+    subtração = numero_1 - numero_2
+    print(subtração)
+    
+else:
+    print("nenhuma alternativa valida foi escolhida")
