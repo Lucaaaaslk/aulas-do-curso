@@ -1,0 +1,13 @@
+valor_casa =int(input('digite o valor da casa'))
+salario = int(input('digite seu salario'))
+anos = int(input('quantos anos vão demorar para casa ser paga?'))
+meses = int(anos * 12)
+prestação_mensal = valor_casa / meses
+print(f'Prestação mensal: {prestação_mensal:.2f}')
+
+if prestação_mensal >= salario * 30 / 100:
+    print("emprestimo aprovado")
+    
+if prestação_mensal <= salario * 30 / 100:
+    print("emprestimo reprovado")
+
