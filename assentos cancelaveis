@@ -24,3 +24,9 @@ def exibir_mapa_assentos(assentos):
     print("mapa dos assentos:")
     for i, fileira in enumerate(assentos):
         print(f"fileira {i + 1}: " + " ".join(str(assento) for assento in fileira))
+reserva_assento(assentos, 0, 2) # assento (1, 3)
+reserva_assento(assentos, 1, 4) # asssentos (2,5)
+reserva_assento(assentos, 3, 6) # assentos (4,7)
+
+# cancelando a reserva do assento (2, 5)
+cancelando_reserva(assentos, 1, 4) # assento (2, 5)
